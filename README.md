@@ -1,4 +1,4 @@
-![Travis CI Build Status]
+This theme is built on underscores (a starter theme as was developed by Keshav, Krishna, Dinesh and Saif) this theme has been made for the development of Dr.Ian Kirkwood's new wordpress website and the goal to make it as Dynamic as possible
 
 _s
 ===
