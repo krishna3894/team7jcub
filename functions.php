@@ -155,3 +155,197 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+// Customizer for Home Description
+function team7cms_homedesc_text($wp_customize){
+	$wp_customize->add_section('team7cms_homedesc_section', array(
+		'title' => 'Home Description'
+	));
+
+	$wp_customize->add_setting('team7cms_homedesc_title1_section1', array(
+		'default'=> 'Example Title Text'
+	));
+
+	$wp_customize->add_setting('team7cms_homedesc_text1_section1', array(
+		'default'=> 'Example Text'
+	));
+
+	$wp_customize->add_control( new wp_customize_control($wp_customize, 'team7cms_homedesc_title_section2', array(
+		'label'=> 'Title 1',
+		'section'=> 'team7cms_homedesc_section',
+		'settings'=> 'team7cms_homedesc_title1_section1'
+	)));
+
+	$wp_customize->add_control( new wp_customize_control($wp_customize, 'team7cms_homedesc_text_section2', array(
+		'label'=> 'Text 1',
+		'section'=> 'team7cms_homedesc_section',
+		'settings'=> 'team7cms_homedesc_text1_section1',
+		'type' => 'textarea'
+	)));
+
+	$wp_customize->add_setting('team7cms_homedesc_title2_section1', array(
+		'default'=> 'Example Title Text'
+	));
+
+	$wp_customize->add_setting('team7cms_homedesc_text2_section1', array(
+		'default'=> 'Example Text'
+	));
+
+	$wp_customize->add_control( new wp_customize_control($wp_customize, 'team7cms_homedesc_title2_section2', array(
+		'label'=> 'Title 2',
+		'section'=> 'team7cms_homedesc_section',
+		'settings'=> 'team7cms_homedesc_title2_section1'
+	)));
+
+	$wp_customize->add_control( new wp_customize_control($wp_customize, 'team7cms_homedesc_text2_section2', array(
+		'label'=> 'Text 1',
+		'section'=> 'team7cms_homedesc_section',
+		'settings'=> 'team7cms_homedesc_text2_section1',
+		'type' => 'textarea'
+	)));
+
+	$wp_customize->add_setting('team7cms_homedesc_title3_section1', array(
+		'default'=> 'Example Title Text'
+	));
+
+	$wp_customize->add_setting('team7cms_homedesc_text3_section1', array(
+		'default'=> 'Example Text'
+	));
+
+	$wp_customize->add_control( new wp_customize_control($wp_customize, 'team7cms_homedesc_title3_section2', array(
+		'label'=> 'Title 3',
+		'section'=> 'team7cms_homedesc_section',
+		'settings'=> 'team7cms_homedesc_title3_section1'
+	)));
+
+	$wp_customize->add_control( new wp_customize_control($wp_customize, 'team7cms_homedesc_text3_section2', array(
+		'label'=> 'Text 1',
+		'section'=> 'team7cms_homedesc_section',
+		'settings'=> 'team7cms_homedesc_text3_section1',
+		'type' => 'textarea'
+	)));
+
+}
+
+add_action('customize_register', 'team7cms_homedesc_text');
+
+// Customizer for Home Description
+
+function team7cms_homehead_text($wp_customize){
+	$wp_customize->add_section('team7cms_homehead_section', array(
+		'title' => 'Home Head'
+	));
+
+	$wp_customize->add_setting('team7cms_homehead_title_section1', array(
+		'default'=> 'Example Title Text'
+	));
+
+	$wp_customize->add_setting('team7cms_homehead_text_section1', array(
+		'default'=> 'Example Text'
+	));
+
+	$wp_customize->add_control( new wp_customize_control($wp_customize, 'team7cms_homehead_title_section2', array(
+		'label'=> 'Title 1',
+		'section'=> 'team7cms_homehead_section',
+		'settings'=> 'team7cms_homehead_title_section1'
+	)));
+
+	$wp_customize->add_control( new wp_customize_control($wp_customize, 'team7cms_homehead_text_section2', array(
+		'label'=> 'Text 1',
+		'section'=> 'team7cms_homehead_section',
+		'settings'=> 'team7cms_homehead_text_section1'
+	)));
+
+}
+
+	add_action('customize_register', 'team7cms_homehead_text');
+
+// Dynamic Carousel 
+	//Customize slider
+	function team7cms_slider($wp_customize){
+		$wp_customize->add_section('team7cms_slider_section', array(
+			'title' => 'Slider'
+		));
+	
+		$wp_customize->add_setting('team7cms_slider1_section1');
+
+		$wp_customize->add_control( new wp_customize_cropped_image_control($wp_customize, 'team7cms_slider1_section2', array(
+			'label'=> 'Image 1',
+			'section'=> 'team7cms_slider_section',
+			'settings'=> 'team7cms_slider1_section1',
+			'width'=> 2000,
+			'height'=>724
+		)));
+
+		$wp_customize->add_setting('team7cms_slider2_section1');
+
+		$wp_customize->add_control( new wp_customize_cropped_image_control($wp_customize, 'team7cms_slider2_section2', array(
+			'label'=> 'Image 2',
+			'section'=> 'team7cms_slider_section',
+			'settings'=> 'team7cms_slider2_section1',
+			'width'=> 2000,
+			'height'=>724
+		)));
+
+		$wp_customize->add_setting('team7cms_slider3_section1');
+
+		$wp_customize->add_control( new wp_customize_cropped_image_control($wp_customize, 'team7cms_slider3_section2', array(
+			'label'=> 'Image 3',
+			'section'=> 'team7cms_slider_section',
+			'settings'=> 'team7cms_slider3_section1',
+			'width'=> 2000,
+			'height'=>724
+		)));
+	
+	}
+	
+		add_action('customize_register', 'team7cms_slider');
+
+//Head info
+//initializing
+		function team7cms_info_text($wp_customize){
+			$wp_customize->add_section('team7cms_info_section', array(
+				'title' => 'Home Info'
+			));
+		
+			$wp_customize->add_setting('team7cms_info_title_section1', array(
+				'default'=> 'Example Title Text'
+			));
+		
+			$wp_customize->add_setting('team7cms_info_text_section1', array(
+				'default'=> 'Example Text'
+			));
+		
+			$wp_customize->add_control( new wp_customize_control($wp_customize, 'team7cms_info_title_section2', array(
+				'label'=> 'Title 1',
+				'section'=> 'team7cms_info_section',
+				'settings'=> 'team7cms_info_title_section1'
+			)));
+		
+			$wp_customize->add_control( new wp_customize_control($wp_customize, 'team7cms_infotext_section2', array(
+				'label'=> 'Text 1',
+				'section'=> 'team7cms_info_section',
+				'settings'=> 'team7cms_info_text_section1'
+			)));
+		
+		}
+		
+			add_action('customize_register', 'team7cms_info_text');
+
+			//Image Banner
+
+	function team7cms_banner($wp_customize){
+		$wp_customize->add_section('team7cms_banner_section', array(
+			'title' => 'Banner'
+		));
+	
+		$wp_customize->add_setting('team7cms_banner_section1');
+
+	$wp_customize->add_control( new wp_customize_cropped_image_control($wp_customize, 'team7cms_banner_section2', array(
+	'label'=> 'Banner',
+	'section'=> 'team7cms_banner_section',
+  	'settings'=> 'team7cms_banner_section1',
+  		'width'=> 2000,
+  		'height'=>500
+  	)));
+  }
+  	add_action('customize_register', 'team7cms_banner');
