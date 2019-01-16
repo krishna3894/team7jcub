@@ -38,4 +38,4 @@
 		<?php the_excerpt(); ?>
 	</div><!-- post-excerpt -->
 	
-</article><!-- #post-## -->
+</article><!-- #post-## -->  
