@@ -1,4 +1,4 @@
-This theme is built on underscores (a custom theme as was developed by Keshav, Krishna, Dinesh and Saif) this theme has been made for the development of Dr.Ian Kirkwood's new wordpress website and the goal to make it as Dynamic as possible
+This theme is built on underscores (a custom theme was developed by Keshav, Krishna, Dinesh and Saif) this theme has been made for the development of Dr.Ian Kirkwood's new wordpress website and the goal to make it as Dynamic as possible
 
 ===
 The Custom theme was developed by using the bootstrap, php, html and it is integrated into the wordpress. 
