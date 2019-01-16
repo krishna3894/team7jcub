@@ -16,7 +16,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<!--		Bootstrap stuff	-->
+<!--		Bootstrap core stuff	-->
 	<link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
@@ -32,6 +32,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cmsassignment2' ); ?></a>
 
 	<!-- NAVBAR -->
+	<!-- Navigation -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
       <a style="color:white" class="navbar-brand"><?php bloginfo('name'); ?></a>
