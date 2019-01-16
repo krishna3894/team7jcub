@@ -1,7 +1,4 @@
-<?php
 
-$video_title				= get_field('video_title');
-?>
 
 
 <!-- VIDEO PLAY -->
@@ -13,7 +10,7 @@ $video_title				= get_field('video_title');
             <a href="#" class="video" data-video="https://www.youtube.com/embed/-rvs9DdrQes" data-toggle="modal" data-target="#videoModal">
               <i class="fas fa-play fa-3x"></i>
             </a>
-            <h1><?php echo $video_title; ?></h1>
+            <h1>View My Video</h1>
           </div>
         </div>
       </div>
