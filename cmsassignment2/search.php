@@ -3,7 +3,7 @@
  * The template for displaying search results pages.
  *
  * @package team 7 cms
- */
+ */  
 
 get_header(); ?>
 
